@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create meeting</title>
+    <link rel="stylesheet" href="createmeeting.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Meeting rooms</h1>
+
+        <div class="create-Meeting-section">
+            <h1>Create a Meeting Room</h1>
+            <form action="javascript:void(0)" method="post" id="create-meeting-form" >
+                <label>Userid
+                    <input type="text" name="Userid" >
+                </label>
+                <button type="button" onclick="getUserid()">Create Meeting</button>
+            </form>
+        </div>
+
+        <h1 class="text-separator">OR</h1>
+
+        <div class="join-meeting-section">
+            <h1>Join Existing Meeting Room</h1>
+            <form action="javascript:void(0)" method="post" id="join-meeting-form" onsubmit="JoinMeeting()">
+                <label>UserName
+                    <input type="text" id="Username" name="Username">
+                </label>
+                <label>MeetingID
+                    <input type="text" id="MeetingID" name="MeetingID">
+                </label>
+                <button type="submit" onclick="JoinMeeting()">Join</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
